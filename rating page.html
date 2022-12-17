@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en".
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Comaptible" content="ie=edge">
+    <title>PolyWeb</title>
+</head>
+<style>
+    body{
+        background-image: url({{url_for("static",filename="pexels-ylanite-koppens-776635.jpg")}});
+        background-size: cover;
+        }
+</style>
+<body bgcolor="45e8a9">
+    <!--div id="data"></div>
+    <a  href="https://docs.google.com/forms/d/e/1FAIpQLSdsE0Rm6-Gsm4qDpcsiWuZRzmo5o8_8uQGroYSPVvKjdIKGtg/viewform">Fill Survey Form</a-->
+    <p style="font-size:2cm; text-align: center;font-style:oblique" >
+        <!--&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-->
+        Thanks for Using
+    </p>
+    <p style="font-size:1.5cm; text-align:center;font-style:oblique">
+        Please Rate Your Experience...</p>  
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsE0Rm6-Gsm4qDpcsiWuZRzmo5o8_8uQGroYSPVvKjdIKGtg/viewform?usp=sf_link">
+        <button type=button 
+        style="background-color:rgb(249, 254, 254);
+        color:rgb(249, 4, 4);
+        font-size:xx-large;
+        font-style: calibri;
+        display: block;
+        margin: auto;
+        "><!--&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;-->&emsp;
+        Fill Form&emsp;
+        <!--&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-->
+    </button>
+        </a>
+    <script>
+        const datalist=document.getElementById('data')
+        new URLSearchParams(window.location.search).forEach((value,
+        name) => {
+            datalist.append(`${name}: ${value}`)
+            datalist.append(document.creativeElements('br'))
+        })
+    </script>
+</body>
+</head>
+</html>
+
+

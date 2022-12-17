@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en".
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Comaptible" content="ie=edge">
+    <title>PolyWeb</title>
+</head>
+<style>
+    body{
+        background-image: url({{ url_for("static",filename="pexels-anete-lusina-5722992.jpg")}});
+        background-size: 100%;
+        }
+</style>
+<body>
+    <form action="/" method="POST">
+        <div>
+            <label >Name&emsp;&emsp;&emsp;</label>
+            <input type="text" name="Name" placeholder="Name" required>
+        </div>
+        <div>
+            <label>Enrollment No.</label>
+            <input type="text" name="enroll" placeholder="Eycno." required>
+        </div>
+        <div>
+            <label for="email">Email&emsp;&emsp;&emsp;</label>
+            <input tpye="text" name="email" placeholder="Ben10 Email"  required>
+        </div>
+        <div>
+            <label>Age&emsp;&emsp;&emsp;&emsp;</label>
+            <input type="number" min="16" max="26" name="age" required>
+        </div> 
+        <div>
+            <label>D.O.B&emsp;&emsp;&emsp;</label>
+            <input type="date" name="DOB" required>
+        </div>
+        <div>
+            <label>Year&emsp;&emsp;&emsp;</label>
+            <input type="number" name="year" max="5" min="1" required>
+        </div>
+        <div>
+            Gender
+            <label>&MediumSpace;&emsp;</label>
+            <select name="gender" required >
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select> 
+             </div>     
+        <div>
+            <!--p style="font-size: xx-large;">What are you looking for?</p>
+            <!--label>&MediumSpace;</label>
+            <select name="preference" required >
+                <option>Partner</option>
+                <option>One Time Date</option>
+                <option>A Friend</option-->
+        </div>
+        <div>
+            <div>
+            <p style="font-size: x-large; font-display: display;">Your Interests:</p
+                <label>Reading</label>
+                <input type="checkbox" name="nature1" >
+            </div>
+            <div>
+                
+                <label>Music</label>
+                <input type="checkbox" name="nature2" >
+            </div>
+            <div>
+                
+                <label>Football</label>
+                <input type="checkbox" name="nature3" >
+            </div>
+            <div>
+                
+                <label>Writing</label>
+                <input type="checkbox" name="nature4" >
+            </div>
+            <div>
+                
+                <label>Photography</label>
+                <input type="checkbox" name="nature5" >
+            </div> 
+            <div>
+                
+                <label>Cooking</label>
+                <input type="checkbox" name="nature6" >
+            </div> 
+            <div>
+                
+                <label>Arts</label>
+                <input type="checkbox" name="nature7" >
+            </div> 
+            <div>
+                
+                <label>Travelling</label>
+                <input type="checkbox" name="nature8" >
+            </div> 
+            <div>
+                
+                <label>Gardening</label>
+                <input type="checkbox" name="nature9" >
+            </div> 
+            <div>
+                
+                <label>Gaming</label>
+                <input type="checkbox" name="nature10" >
+            </div> 
+            <div>
+                
+                <label>Blogging</label>
+                <input type="checkbox" name="nature11" >
+            </div> 
+            <div>
+                
+                <label>Web-series/Movies</label>
+                <input type="checkbox" name="nature12" >
+            </div> <div>
+                
+                <label>Cricket</label>
+                <input type="checkbox" name="nature13" >
+            </div> 
+            <div>
+                
+                <label>Trekking</label>
+                <input type="checkbox" name="nature14" >
+            </div> 
+            <div>
+            
+                <label>Hacking/Coding</label>
+                <input type="checkbox" name="nature15" >
+            </div> 
+            <div>
+            
+                <label>Badminton</label>
+                <input type="checkbox" name="nature16" >
+            </div> 
+            <div>
+                
+                <label>Stand-Ups</label>
+                <input type="checkbox" name="nature17" >
+            </div> 
+            <div>
+                
+                <label>Streaming</label>
+                <input type="checkbox" name="nature18" >
+            </div> 
+            <div>
+                
+                <label>Anime</label>
+                <input type="checkbox" name="nature19" >
+            </div> 
+        </div>    
+
+
+        </div>
+        
+            <p>Enter your lucky number</p>
+            <label>&emsp;&emsp;</label>
+            <input name="password" type="password" required placeholder="Enter your lucky number">
+        </div> 
+        <div>
+            <button type="submit">Submit</button>
+        </div>  
+    </form>
+</body>
+
+</html>
